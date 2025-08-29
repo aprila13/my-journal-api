@@ -256,7 +256,3 @@ npm run start:dev
 ```
 
 ---
-
-
-Do you also want me to draft a **root README** that links to both repos (UI + API) in case you present this as one project?
-```
