@@ -252,5 +252,3 @@ npx prisma migrate deploy
 # Run dev server
 npm run start:dev
 ```
-
-```
