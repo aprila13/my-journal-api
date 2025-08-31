@@ -46,7 +46,10 @@ export class AuthService {
       }
     } else {
       const ok = await bcrypt.compare(password, user.passwordHash);
-      if (!ok) throw new UnauthorizedException('Invalid credentials');
+      if (!ok)
+        throw new UnauthorizedException(
+          'Username and/or password is incorrect',
+        );
     }
 
     const token = this.jwt.sign({ sub: user?.id, username: user?.username });
